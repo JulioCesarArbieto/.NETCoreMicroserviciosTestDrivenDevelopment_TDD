@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.14.5" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CONTINER.API.MANAGER.Account\CONTINER.API.MANAGER.Account.csproj" />
+    <ProjectReference Include="..\CONTINER.API.MANAGER.Deposit\CONTINER.API.MANAGER.Deposit.csproj" />
+    <ProjectReference Include="..\CONTINER.API.MANAGER.History\CONTINER.API.MANAGER.History.csproj" />
+    <ProjectReference Include="..\CONTINER.API.MANAGER.Notification\CONTINER.API.MANAGER.Notification.csproj" />
+    <ProjectReference Include="..\CONTINER.API.MANAGER.Security\CONTINER.API.MANAGER.Security.csproj" />
+    <ProjectReference Include="..\CONTINER.API.MANAGER.Withdrawal\CONTINER.API.MANAGER.Withdrawal.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="History\" />
+    <Folder Include="Withdrawal\" />
+    <Folder Include="Notificaction\" />
+  </ItemGroup>
+
+</Project>
